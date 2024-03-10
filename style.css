@@ -506,6 +506,11 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
+footer nav {
+  width: 100%;
+}
+
 .footer-menu {
   font-weight: bold;
   writing-mode: vertical-rl;
@@ -514,6 +519,7 @@ footer {
   font-size: 15px;
   color: #fff;
   padding: 20% 0%;
+  margin: 0 auto;
 }
 
 .footer-menu li:nth-child(4) {
@@ -607,6 +613,7 @@ footer {
     margin-top: 10%;
     margin-left: 0%;
     order: 2;
+    gap: 4%;
   }
 
   .content-img {
@@ -641,6 +648,10 @@ footer {
   .kodawari-text-wrap h2 {
     font-size: 30px;
     margin-left: 10%;
+  }
+
+  .content-text-wrap h3 {
+    margin-left: 5%;
   }
 
   .content.second .content-wrap {
@@ -773,9 +784,13 @@ footer {
     line-height: 1.8em;
   }
 
+  .kodawari-text-wrap {
+    gap: 5.5%;
+  }
+
   .kodawari-text-wrap h2 {
     font-size: 32px;
-    margin-left: 8%;
+    margin-left: 6%;
   }
 
   .kodawari-text-wrap h2::before {
