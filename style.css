@@ -73,7 +73,7 @@ body {
   letter-spacing: 0.3em;
   position: absolute;
   top: 5%;
-  right: 7%;
+  right: 5%;
   z-index: 10;
 }
 
@@ -106,6 +106,7 @@ body {
   height: 740px;
   object-fit: cover;
   width: 100%;
+  position: relative;
 }
 
 /*-------------------------------------------
@@ -123,6 +124,8 @@ body {
   align-items: center;
   justify-content: center;
   color: #fef2d8;
+  max-width: 900px;
+  margin: 0 auto;
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 2.5s, transform 2.5s;
@@ -140,8 +143,7 @@ body {
 
 .kodawari-img {
   border-radius: 30px;
-  width: 37%;
-  height: 370px;
+  width: 50%;
   object-fit: cover;
   margin-right: 8%;
 }
@@ -183,31 +185,32 @@ h2 img {
   margin-bottom: 1%;
 }
 
-.content {
-  padding: 0% 10%;
-}
-
 .content h2 {
   font-size: 50px;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 .content-wrap {
   display: flex;
   flex-direction: row-reverse;
-  height: 400px;
   align-items: center;
   justify-content: center;
-  margin-top: 7%;
-  margin-bottom: 7%;
-  margin-left: -5%;
+  max-width: 900px;
+  margin: 5% auto 0%;
 }
 
 .content-text-wrap {
   display: flex;
   flex-direction: row-reverse;
-  margin-left: 10%;
+}
+
+.content-text-wrap:first-child {
+  padding-left: 10%;
+}
+
+.content-text-wrap:last-child {
+  padding-left: 10%;
 }
 
 .content-text-wrap h3 {
@@ -245,8 +248,9 @@ h2 img {
 
 .content-img {
   border-radius: 30px;
-  width: 100%;
   height: 320px;
+  display: block;
+  margin: 0 auto;
   object-fit: cover;
 }
 
@@ -283,7 +287,6 @@ h2 img {
 
 .content.second .content-text-wrap {
   margin-right: 8%;
-  margin-left: 5%;
 }
 
 .content-link-end {
@@ -306,11 +309,11 @@ h2 img {
 .news {
   background-image: url(./img/back2.jpeg);
   background-repeat: repeat;
+  padding: 5% 0%;
 }
 
 .news-wrap {
-  padding: 6% 5%;
-  width: 90%;
+  max-width: 900px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(100px);
@@ -362,11 +365,12 @@ SNS
 }
 
 .sns_contents {
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 3% 2%;
-  padding: 0 10%;
 }
 
 .sns_contents img {
@@ -418,19 +422,20 @@ SNS
   height: auto;
   background-image: url(./img/back2.jpeg);
   background-repeat: repeat;
+  padding: 7% 0%;
 }
 
 .storeguide-text h2 {
   font-size: 32px;
   margin-bottom: 5%;
-  padding: 0 10px;
 }
 
 .storeguide-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10% 5%;
+  max-width: 900px;
+  margin: 0 auto;
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 2s, transform 2s;
@@ -441,16 +446,19 @@ SNS
 }
 
 .stor-img {
-  width: 40%;
+  width: 45%;
   border-radius: 30px;
   object-fit: cover;
   height: 300px;
 }
 
-.stor th,
 .stor td {
-  line-height: 2.5em;
-  padding: 0 10px;
+  padding-left: 20px;
+  line-height: 2.5;
+}
+
+.stor th {
+  line-height: 2.5;
 }
 
 .stor th {
@@ -500,7 +508,6 @@ footer {
     url(./img/footer_img.jpg);
   background-size: cover;
   background-position: 50% 40%;
-  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,8 +525,9 @@ footer nav {
   letter-spacing: 0.3em;
   font-size: 15px;
   color: #fff;
-  padding: 20% 0%;
   margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .footer-menu li:nth-child(4) {
@@ -529,7 +537,7 @@ footer nav {
 }
 
 .footer-logo {
-  width: 50%;
+  width: 200px;
   display: block;
   margin: 0 auto;
   margin-bottom: 10%;
@@ -538,13 +546,13 @@ footer nav {
 .footer-copy {
   font-size: 10px;
   color: #fff;
-  padding-bottom: 3%;
+  padding-bottom: 10%;
 }
 
 /*-------------------------------------------
-800px＿ヘッダー
+900px＿ヘッダー
 -------------------------------------------*/
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .menu {
     text-shadow: 2px 2px 5px #fff, -2px 2px 5px #fff, 2px -2px 5px #fff,
       -2px -2px 5px #fff;
@@ -558,28 +566,27 @@ footer nav {
   }
 
   /*-------------------------------------------
-800px＿こだわり
+900px＿こだわり
 -------------------------------------------*/
-
-  .kodawari {
-    padding-bottom: 8%;
-  }
 
   .kodawari-wrap {
     flex-direction: column;
-    height: 870px;
+    height: auto;
+    margin: 0 auto;
   }
 
   .kodawari-text-wrap {
     margin-top: 8%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
+    padding-right: 5px;
   }
 
   .kodawari-img {
     order: -1;
     width: 85%;
+    height: auto;
     margin-right: 0;
-    margin-top: 18%;
+    margin-top: 10%;
     margin-bottom: 1.5%;
   }
 
@@ -589,35 +596,36 @@ footer nav {
   }
 
   /*-------------------------------------------
-800px＿商品案内
+900px＿商品案内
 -------------------------------------------*/
 
   h2 img {
     width: 360px;
-    margin-bottom: 10%;
-  }
-
-  .content {
-    padding: 0 5%;
   }
 
   .content-wrap {
     flex-direction: column;
     height: auto;
     margin-left: 0;
-    width: 93%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .content-text-wrap {
-    margin-top: 10%;
-    margin-left: 0%;
     order: 2;
     gap: 4%;
+    margin-top: 10%;
+  }
+
+  .content-text-wrap:first-child {
+    padding-left: 0%;
   }
 
   .content-img {
     order: 1;
+    width: 85%;
+    height: auto;
+    margin-top: 10%;
   }
 
   .content-text {
@@ -633,7 +641,7 @@ footer nav {
     display: flex;
     order: 3;
     background-color: #810a00;
-    width: 59%;
+    width: 50%;
     height: 48px;
     border-radius: 5px;
     font-size: 14px;
@@ -650,28 +658,25 @@ footer nav {
     margin-left: 10%;
   }
 
-  .content-text-wrap h3 {
-    margin-left: 5%;
-  }
-
   .content.second .content-wrap {
     flex-direction: column;
-    height: 1000px;
   }
 
-  .content.second .content-img {
-    margin-left: 0;
+  .content.second .content-text-wrap {
+    margin-right: 0%;
+    margin: 0 auto;
+    margin-top: 10%;
   }
 
   .content-link-end {
-    width: 55%;
+    width: 50%;
     font-size: 14px;
     height: 48px;
     margin-top: 2%;
   }
 
   /*-------------------------------------------
-800px_お知らせ
+900px_お知らせ
 -------------------------------------------*/
   .news-wrap h2 {
     margin-top: 5%;
@@ -691,12 +696,12 @@ footer nav {
   }
 
   .news-wrap {
-    padding: 13% 7%;
     line-height: 1.7;
+    width: 85%;
   }
 
   /*-------------------------------------------
-800px_SNS
+900px_SNS
 -------------------------------------------*/
 
   .sns h2 {
@@ -708,7 +713,7 @@ footer nav {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 3% 3%;
-    padding: 0 8%;
+    width: 85%;
   }
 
   .sns-link {
@@ -718,7 +723,7 @@ footer nav {
   }
 
   /*-------------------------------------------
-800px_店舗案内
+900px_店舗案内
 -------------------------------------------*/
 
   .storeguide-text h2 {
@@ -730,10 +735,12 @@ footer nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+    width: 85%;
   }
 
   .stor-img {
-    width: 93%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
   }
 
@@ -743,10 +750,6 @@ footer nav {
 
   .storeguide-text {
     margin-left: 0%;
-  }
-
-  .stor {
-    margin-left: 5%;
   }
 
   .stor,
@@ -765,14 +768,18 @@ footer nav {
 450x＿ヘッダー
 -------------------------------------------*/
 @media (max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
+
   .slider img {
     height: 667px;
   }
 
   .header-logo {
     position: absolute;
-    left: 0%;
-    top: 410px;
+    left: -3%;
+    top: 430px;
     z-index: 10;
   }
 
@@ -780,7 +787,6 @@ footer nav {
 450x＿こだわり
 -------------------------------------------*/
   .kodawari-text {
-    font-size: 15px;
     line-height: 1.8em;
   }
 
@@ -807,5 +813,31 @@ footer nav {
 
   h2 img {
     width: 320px;
+  }
+
+  .content-link-smartphone {
+    width: 70%;
+  }
+
+  .content-link-end {
+    width: 70%;
+  }
+
+  /*-------------------------------------------
+450x＿SNS
+-------------------------------------------*/
+
+  .sns-link {
+    width: 70%;
+  }
+  /*-------------------------------------------
+450x＿フッター
+-------------------------------------------*/
+  .footer-menu {
+    margin-top: 15%;
+  }
+
+  .footer-logo {
+    width: 150px;
   }
 }
