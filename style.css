@@ -613,7 +613,7 @@ footer nav {
 
   .content-text-wrap {
     order: 2;
-    gap: 4%;
+    gap: 5%;
     margin-top: 10%;
   }
 
@@ -769,7 +769,7 @@ footer nav {
 -------------------------------------------*/
 @media (max-width: 450px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .slider img {
