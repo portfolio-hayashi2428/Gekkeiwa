@@ -129,7 +129,7 @@ body {
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 2.5s, transform 2.5s;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .kodawari-text-wrap {
@@ -199,7 +199,7 @@ h2 img {
   justify-content: center;
   max-width: 900px;
   margin: 5% auto 0%;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 .content-text-wrap {
@@ -288,7 +288,7 @@ h2 img {
 }
 
 .content.second .content-text-wrap {
-  margin-right: 8%;
+  margin-right: 10%;
 }
 
 .content-link-end {
