@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "Shippori Mincho", serif;
-  font-size: 16px;
+  font-size: 17px;
   color: #572a0b;
   background-image: url(./img/back1.jpeg);
   background-repeat: repeat;
@@ -129,6 +129,7 @@ body {
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 2.5s, transform 2.5s;
+  padding-right: 20px;
 }
 
 .kodawari-text-wrap {
@@ -198,6 +199,7 @@ h2 img {
   justify-content: center;
   max-width: 900px;
   margin: 5% auto 0%;
+  padding-right: 30px;
 }
 
 .content-text-wrap {
@@ -217,7 +219,7 @@ h2 img {
   writing-mode: vertical-rl;
   font-size: 32px;
   letter-spacing: 0.1em;
-  margin-left: 15%;
+  margin-left: 13%;
   position: relative;
 }
 
@@ -523,7 +525,7 @@ footer nav {
   writing-mode: vertical-rl;
   line-height: 3.7em;
   letter-spacing: 0.3em;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
   margin: 0 auto;
   margin-top: 10%;
@@ -573,12 +575,12 @@ footer nav {
     flex-direction: column;
     height: auto;
     margin: 0 auto;
+    padding-right: 0px;
   }
 
   .kodawari-text-wrap {
     margin-top: 8%;
     margin-bottom: 10%;
-    padding-right: 5px;
   }
 
   .kodawari-img {
@@ -609,11 +611,12 @@ footer nav {
     margin-left: 0;
     width: 100%;
     margin: 0 auto;
+    padding-right: 0px;
   }
 
   .content-text-wrap {
     order: 2;
-    gap: 5%;
+    gap: 7%;
     margin-top: 10%;
   }
 
@@ -651,11 +654,11 @@ footer nav {
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    margin-bottom: 3%;
   }
 
   .kodawari-text-wrap h2 {
     font-size: 30px;
-    margin-left: 10%;
   }
 
   .content.second .content-wrap {
@@ -769,7 +772,7 @@ footer nav {
 -------------------------------------------*/
 @media (max-width: 450px) {
   body {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .slider img {
@@ -787,16 +790,16 @@ footer nav {
 450x＿こだわり
 -------------------------------------------*/
   .kodawari-text {
-    line-height: 1.8em;
+    line-height: 1.9em;
   }
 
   .kodawari-text-wrap {
-    gap: 5.5%;
+    gap: 5%;
+    margin-bottom: 13%;
   }
 
   .kodawari-text-wrap h2 {
     font-size: 32px;
-    margin-left: 6%;
   }
 
   .kodawari-text-wrap h2::before {
@@ -805,6 +808,10 @@ footer nav {
 
   .kodawari-text-wrap h2::after {
     right: -13px;
+  }
+
+  .content-text-wrap h3 {
+    margin-left: 10%;
   }
 
   /*-------------------------------------------
@@ -823,6 +830,15 @@ footer nav {
     width: 70%;
   }
 
+  .content h2 {
+    margin-top: 10%;
+  }
+  /*-------------------------------------------
+450x＿NEWS
+-------------------------------------------*/
+  .news {
+    padding-bottom: 10%;
+  }
   /*-------------------------------------------
 450x＿SNS
 -------------------------------------------*/
