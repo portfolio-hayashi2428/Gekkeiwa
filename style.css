@@ -63,6 +63,24 @@ body {
 }
 
 /*-------------------------------------------
+スライダー部分
+-------------------------------------------*/
+
+.slider {
+  position: relative;
+  z-index: 1;
+  list-style-type: none;
+}
+
+.slider img {
+  object-fit: cover;
+  height: 740px;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+}
+
+/*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
 
@@ -89,24 +107,6 @@ body {
   top: 450px;
   width: 250px;
   z-index: 10;
-}
-
-/*==================================
-スライダー部分
-===================================*/
-
-.slider {
-  position: relative;
-  z-index: 1;
-  list-style-type: none;
-}
-
-.slider img {
-  object-fit: cover;
-  height: 740px;
-  object-fit: cover;
-  width: 100%;
-  position: relative;
 }
 
 /*-------------------------------------------
@@ -235,7 +235,7 @@ h2 img {
 .content-text-wrap h3::after {
   content: "";
   display: block;
-  width: 2.3px; /* 縦線の太さ */
+  width: 2.3px;
   height: 100%;
   background-color: #6b3613;
   position: absolute;
@@ -476,32 +476,6 @@ iframe {
   aspect-ratio: 16/9;
 }
 
-/* ふわっと順番に表示 */
-
-.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.fadeUp {
-  animation-name: fadeUpAnime;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes fadeUpAnime {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
@@ -549,6 +523,34 @@ footer nav {
   font-size: 10px;
   color: #fff;
   padding-bottom: 10%;
+}
+
+/*-------------------------------------------
+商品案内_ふわっと順番に表示 
+-------------------------------------------*/
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*-------------------------------------------
