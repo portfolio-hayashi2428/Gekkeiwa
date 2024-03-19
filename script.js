@@ -55,3 +55,7 @@ function delayScrollAnime() {
     }
   });
 }
+$(window).scroll(function () {
+  delayScrollAnime(); /* アニメーション用の関数を呼ぶ*/
+});
+
